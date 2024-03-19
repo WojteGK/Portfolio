@@ -1,3 +1,4 @@
+
 body {
   background-color: rgb(28, 28, 28);
   color: rgb(180, 180, 180);
@@ -6,66 +7,14 @@ body {
   justify-content: center;
 }
 
-h1 {
-  margin: 20px 0;
-  padding: 20px 0;
-  display: flex;
-  font-family: "Black Ops One", system-ui;
-  font-size: 0vmax;
-  justify-content: center;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.nav-wrapper {
-  border-radius: 60px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #890101;
-  box-shadow: 0 0 10px 5px #000000;
-}
-
-.nav-wrapper ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.nav-wrapper ul li {
-  float: left;
-  text-shadow: black;
-  border-radius: 10px;
-  padding: 10px 10px 20px 20px;
-}
-
-.nav-wrapper ul li a {
-  display: block;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: double;
-  text-shadow: #151515 1px 1px 1px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 12px 5px #4d0909;
-  background: radial-gradient(circle, rgba(67, 0, 0, 0.1) 0%, rgb(108, 0, 0) 100%);
-}
-
-.nav-wrapper ul li a:hover {
-  background-color: #ff0101;
-}
-
 h2 {
   color: rgb(235, 235, 235);
   margin: 20px;
 }
 
 #about-me,
-#what-i-do,
-#what-i-know,
+#capabilities,
+#skills,
 #price-table,
 #projects,
 #photos {
@@ -78,12 +27,4 @@ h2 {
   border-radius: 20px;
   background-color: #232323;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #890101;
-  box-shadow: 0 5px 15px 0 #000000;
-  border-radius: 20px;
-}
+

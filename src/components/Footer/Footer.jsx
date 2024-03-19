@@ -1,10 +1,13 @@
 import React from 'react'
+import './Footer.css'
 
 function Footer() {
   return (
-   <footer>
+   <div id="footer">      
+      <footer>
       <p>Wojciech Górecki</p>
-   </footer>
+      </footer>
+   </div>
   )
 }
 
