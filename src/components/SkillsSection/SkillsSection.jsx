@@ -1,14 +1,18 @@
 import React from 'react'
+import './SkillsSection.css'
 
 function SkillsSection() {
   return (
-   <div id="what-i-know">
-        <h2>Na czym się znam</h2>
+   <div id="skills">
+        <h2>Skills</h2>
         <ul>
           <li>C#<img height={14} width={18} src="./src/assets/c-sharp-c.svg" alt="c-sharp icon" /></li>
           <li>Python<img height={14} width={18} src="src\assets\python.svg" alt="python icon" /></li>
-          <li>Java</li>
-          <li>HTML5<i className="fab fa-html5"></i>, CSS3<i class="fab fa-css3-alt"></i>, podstawy JavaScript<i class="fab fa-js-square"></i></li>
+          <li>Java<img height={14} width={18} src="src\assets\java.svg" alt="java icon"/></li>
+          <li>HTML5<img height={14} width={18} src="src\assets\html5.svg" alt="html5 icon" />
+          CSS3<img height={14} width={18} src="src\assets\css3.svg" alt="css3 icon" />
+          JavaScript<img height={14} width={18} src="src\assets\javascript.svg" alt="javascript icon" /></li>
+          <li>React<img height={12} width={18} src="src\assets\react.svg" alt="react icon" /></li>
         </ul>
    </div>
   )
