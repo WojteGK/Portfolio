@@ -6,13 +6,13 @@ function SkillsSection() {
    <div id="skills">
         <h2>Skills</h2>
         <ul>
-          <li>C#<img height={14} width={18} src="public/icons/c-sharp.svg" alt="[c-sharp icon]" /></li>
-          <li>Python<img height={14} width={18} src="public/icons/python.svg" alt="[python icon]" /></li>
-          <li>Java<img height={14} width={18} src="public/icons/java.svg" alt="[java icon]"/></li>
-          <li>HTML5<img height={14} width={18} src="public/icons/html5.svg" alt="[html5 icon]" />
-            CSS3<img height={14} width={18} src="public/icons/css3.svg" alt="[css3 icon]" />
-            JavaScript<img height={14} width={18} src="public/icons/javascript.svg" alt="[javascript icon]" /></li>
-          <li>React<img height={12} width={18} src="public/icons/react.svg" alt="[react icon]" /></li>
+          <li>C#<img height={14} width={18} src="icons/c-sharp.svg" alt="[c-sharp icon]" /></li>
+          <li>Python<img height={14} width={18} src="icons/python.svg" alt="[python icon]" /></li>
+          <li>Java<img height={14} width={18} src="icons/java.svg" alt="[java icon]"/></li>
+          <li>HTML5<img height={14} width={18} src="icons/html5.svg" alt="[html5 icon]" />
+            CSS3<img height={14} width={18} src="icons/css3.svg" alt="[css3 icon]" />
+            JavaScript<img height={14} width={18} src="icons/javascript.svg" alt="[javascript icon]" /></li>
+          <li>React<img height={12} width={18} src="icons/react.svg" alt="[react icon]" /></li>
         </ul>
    </div>
   )

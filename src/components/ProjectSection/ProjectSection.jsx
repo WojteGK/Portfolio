@@ -3,11 +3,10 @@ import React from 'react'
 function ProjectSection() {
   return (
     <div id="projects">
-      <h2>Portfolio</h2>
+      <h2>My projects:</h2>
       <ol>
-         <li>Projekt 1</li>
-         <li>Projekt 2</li>
-         <li>Projekt 3</li>
+         <li><a href="https://github.com/WojteGK/GoodNight-Project">The Goodnight project</a></li>
+         <li><a href='https://github.com/WojteGK/Mod-Loader'>The ModLoader Project</a></li>
       </ol>
     </div>
   )
