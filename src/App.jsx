@@ -5,8 +5,12 @@ import SkillsSection from './components/SkillsSection/SkillsSection'
 import PriceTable from './components/PriceTable/PriceTable'
 import ProjectSection from './components/ProjectSection/ProjectSection'
 import Footer from './components/Footer/Footer'
-function App() {
+import React, { useEffect } from 'react';
 
+function App() {
+  useEffect(() => {
+    alert('Site is still under development. Thank you for understanding :)')
+  }, [])
   return (
     <div>
       <Navbar/>
