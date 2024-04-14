@@ -2,10 +2,12 @@ import React from 'react'
 import './Footer.css'
 
 function Footer() {
+  const year = new Date().getFullYear()
   return (
    <div id="footer">      
       <footer>
-      <p>Wojciech Górecki</p>
+        <div>Wojciech Górecki</div>
+        <div className='year'>{year}</div>
       </footer>
    </div>
   )
