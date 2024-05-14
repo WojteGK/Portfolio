@@ -3,7 +3,7 @@ import './SkillsSection.css'
 
 function SkillsSection() {
   return (
-   <div id="skills">
+   <div id="skills" className='subpage skills'>
         <h2>Skills</h2>
         <ul>
           <li>C#<img height={14} width={18} src="icons/c-sharp.svg" alt="[c-sharp icon]" /></li>
