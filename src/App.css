@@ -1,32 +1,37 @@
-
+:root {
+  --footer-size: 60px;
+  --navbar-side-margin: 25px;
+  --navbar-height: 5rem;
+  --color-primary: #890101;
+  --color-secondary: #151515;
+  --color-background: #1c1c1c;
+  --color-forground: #b4b4b4;
+  --color-accent: #ff0000;
+  --color-shadow: #000000;
+}
 body {
+  padding: var(--navbar-side-margin);
+  padding-top: calc(var(--navbar-height) * 1.4);
   background-color: rgb(28, 28, 28);
   color: rgb(180, 180, 180);
+  min-height: 95vh;
+  justify-content: space-between;
   display: flex;
-  
   flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
 h2 {
   color: rgb(235, 235, 235);
-  margin: 20px;
 }
-
-#about-me,
-#capabilities,
-#skills,
-#price-table,
-#projects,
-#photos {
+.subpage {
+  --subpage-padding: 10px;
+  background-color: rgb(28, 28, 28);
+  color: rgb(180, 180, 180);
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #232323;
+  border: 1px solid red;
+  padding: var(--subpage-padding);
 }
-
