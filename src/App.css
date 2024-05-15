@@ -63,3 +63,10 @@ h2 {
   color: var(--color-accent);
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  .subpage {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+}
