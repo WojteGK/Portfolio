@@ -1,11 +1,17 @@
 
-import React, { useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const height = navRef.current.offsetHeight;
+    document.documentElement.style.setProperty('--navbar-height-dyn', `${height}px`);
+  }, []);
   return (    
-   <nav>
+   <nav ref={navRef}>
     <div className="nav-wrapper">
       <Link to="/" className="main-title">
       <img src="public/icons/favicon/android-chrome-512x512.png" alt="WG logo" className="logo"/>
