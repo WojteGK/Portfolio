@@ -23,7 +23,7 @@ function Navbar() {
    <nav ref={navRef} >
     <div onClick={handleNavClick} className={isExpanded ? 'nav-wrapper expanded' : 'nav-wrapper'}>
       <Link to="/" className="main-title">
-      <img src="public/icons/favicon/android-chrome-512x512.png" alt="WG logo" className="logo"/>
+      <img src="./icons/favicon/android-chrome-512x512.png" alt="WG logo" className="logo"/>
       <h1 className="title black-ops">Wojciech Górecki</h1>
       </Link>
       <ul>
