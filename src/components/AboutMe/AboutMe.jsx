@@ -1,14 +1,17 @@
 import React from 'react'
 import './AboutMe.css'
+import { Link } from 'react-router-dom';
 
 function AboutMe() {
+
+  
   return (
   <div id="about-me" className='subpage about-me'>
     <div className='about-section'>
       <div className="about-me-text">
         <h2 className='sub-heading'>About me</h2>
         <p className='text-block'>Hi! I am Computer Science student from Katowice. 
-          In free time I'm also participating in many <a href="/projects">Projects</a>. 
+          In free time I'm also participating in many <Link to="/projects">Projects</Link>. 
           I have many hobbys, some of which are hitting gym, playing electric guitar,
           and of course programming. I finished 12 years of education in music school
           where I developed many usefull abilities like performing in front of people
