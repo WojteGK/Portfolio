@@ -1,0 +1,55 @@
+.about-me {
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0% 5% 0%;
+ }
+ .about-me-text {
+   max-width: 67%;
+ }
+ 
+ .sub-heading {
+   font-size: 2em;
+   margin: 0% 0% 0% 5%;
+ }
+ .text-block {
+    text-indent: 10%;
+    font-size: 1.2em;
+    margin: 2% 5% 0% 0%;
+ }
+ 
+ .about-me-image img {
+    width: 20rem;
+    height: auto;
+ }
+ 
+ .social-links {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+ 
+ .social-links a img {
+   width: 20px;
+   height: 20px;
+ }
+ @media screen and (max-width: 768px) {
+   .about-section {
+     flex-direction: column;
+   }
+   .about-me-text {
+     max-width: 100%;
+   }
+   .about-me-image img {
+     width: 15rem;
+     margin-top: 5rem;
+   }
+  
+ }

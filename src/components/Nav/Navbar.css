@@ -1,120 +1,97 @@
 nav {
-   position: sticky;
-   top: 0;
+  display: flexbox;
+  position: fixed;
+  top: 0%;
+  width: var(--content-width);
+  left: 50%;
+  transform: translateX(-50%);
+  height: var(--navbar-height-init);
+}
+.main-title {
+  padding-left: var(--navbar-side-margin);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  text-decoration: none;
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
 }
 
-.blaka-regular {
-  font-family: "Blaka", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
 #expand-button {
   display: none;
 }
-h1 {
-   margin: 20px 0;
-   
-   display: flex;
-   font-family: 'Blaka', sans-serif;
-   font-size: 10px;
-   justify-content: center;
-   align-items: center;
-   color: rgb(255, 255, 255);
-   text-shadow: 2px 2px 4px #000000;
- }
- 
- .nav-wrapper {
-   border-radius: 60px 20px;
-   display: flex;
-   
-  
-   justify-content: space-between;
-   align-items: center;
-   padding: 0px 20px 0px 20px;
-   background-color: #890101;
-   box-shadow: 0 0 10px 5px #000000;
- }
- 
- .nav-wrapper ul {
-   list-style-type: none;
-   
-   margin: 0;
-   padding: 0;
-   overflow: hidden;
- }
- 
- .nav-wrapper ul li {
-   float: left;
-   text-shadow: black;
-   border-radius: 10px;
-   padding: 10px 10px 20px 20px;
- }
- 
- .nav-wrapper ul li a {
-   display: block;
-   color: rgb(255, 255, 255);
-   text-align: center;
-   padding: 20px 20px;
-   text-decoration: double;
-   text-shadow: #151515 1px 1px 1px;
-   border-radius: 10px;
-   box-shadow: 0px 2px 12px 5px #4d0909;
-   background: radial-gradient(circle, rgba(67, 0, 0, 0.1) 0%, rgb(108, 0, 0) 100%);
- }
- 
- .nav-wrapper ul li a:hover {
-   background-color: #ff0101;
- }
+.title {
+  margin-left: 1rem;
+  font-family: 'Blaka', sans-serif;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.2rem 0.5rem 0.5rem var(--color-shadow);
+}
 
- @media (max-width: 700px){
-  #expand-button {
-    display: block;
-    position: fixed;
-    top: 16px;
-    left: 0;
-    margin: 20px;
-  }
-  .hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    padding: 0;
-  }
-  
-  .line {
-    width: 2rem;
-    height: 0.2rem;
-    margin: 0.4rem 0;
-    background: #333; /* Change to desired color */
-  }
+.nav-wrapper {
+border-radius: 10px 10px 50px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: var(--navbar-side-margin);
+padding-right: var(--navbar-side-margin);
+background-color: var(--color-primary);
+box-shadow: 0 0 10px 5px var(--color-shadow);
+}
+
+.nav-wrapper ul {
+list-style-type: none;
+margin: 0;
+padding-right: 25px;
+overflow: hidden;
+}
+
+.nav-wrapper ul li {
+float: left;
+text-shadow: var(--color-shadow);
+border-radius: 10px;
+padding: 10px 10px 20px 20px;
+}
+
+.nav-wrapper ul li a {
+display: block;
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 20px 20px;
+text-decoration: double;
+text-shadow: var(--color-secondary) 1px 1px 1px;
+border-radius: 10px;
+box-shadow: 0px 2px 12px 5px #4d0909;
+background: radial-gradient(circle, rgba(67, 0, 0, 0.1) 0%, rgb(108, 0, 0) 100%);
+}
+
+.nav-wrapper ul li a:hover {
+background-color: var(--color-accent);
+}
+
+@media (max-width: 700px) {
   .nav-wrapper {
-      width: 90%; /* Adjust as needed */
-      height: 20%;
-      overflow: hidden;
-      transition: width 0.2s ease;      
+    transition: max-height 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    max-height: 12vh;
   }
-  .nav-wrapper h1 {
-    margin-left: 2.5rem;
+  .nav-wrapper.expanded {
+    transition: max-height 0.5s ease-in-out;
+    max-height: 50vh;
   }
-  .nav-wrapper:hover {
-      width: 40%; /* Adjust as needed */
-  }
-  .nav-wrapper:hover h1 {
-      display: none;
-  }
+
   .nav-wrapper ul {
-      flex-direction: column;
+    flex-direction: column;
+    align-items: center;
   }
+
   .nav-wrapper ul li {
-      display: none;
-  }
-  .nav-wrapper:hover ul li {
-      display: block;
-      margin-left: 2.0rem;
+    margin: 10px 0;
+    padding: 10px;
   }
 }

@@ -1,12 +1,21 @@
 footer {
+   --footer-size: 2.5rem;
+   --footer-width: 99%;
+   background-color: #890101;
+   box-shadow: 0 5px 15px 0 #000000;
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 20px;
-   background-color: #890101;
-   box-shadow: 0 5px 15px 0 #000000;
-   border-radius: 20px;
+   height: var(--footer-size);
+   border-radius: 10px;
+   position: absolute;
+    bottom: 2px;
+    width: var(--footer-width);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
  }
+
  .year{
    margin-left: 0.5vmax;
    color: #727272;
