@@ -50,7 +50,7 @@ h2 {
   padding-top: 5%;
   margin-top: 5%;
 	border: 2px solid #474747;
-	border-radius: 10px;
+	border-radius: 1rem;
 	box-shadow: -5px -5px 15px var(--color-background), 5px 5px 15px var(--color-shadow), inset 5px 5px 10px var(--color-background), inset -5px -5px 10px var(--color-background);
 	color: var(--color-text);
   text-shadow: 1px 1px 1px var(--color-shadow);
