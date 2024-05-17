@@ -1,3 +1,32 @@
 .development-warning {
-   background-color: rgba(255, 0, 0, 0.5);
+   padding: 1rem;
+   border: rgba(255, 0, 0, 0.8);
+   border-radius: 1.5rem;
+   animation: warningFadeOut 4s ease forwards;
+}
+@keyframes warningFadeOut {
+  0% {
+   background-color: rgba(255, 0, 0, 0.7);
+  }
+  3% {
+   background-color: rgba(255, 0, 0, 0.9);
+  }
+  6% {
+   background-color: rgba(255, 0, 0, 0.7);
+  }
+  9% {
+   background-color: rgba(255, 0, 0, 0.9);
+  }
+  12% {
+   background-color: rgba(255, 0, 0, 0.7);
+  }
+  15% {
+   background-color: rgba(255, 0, 0, 0.9);
+  }
+  25% {
+   background-color: rgba(255, 0, 0, 0.9);
+  }
+  100% {
+   background-color: rgba(255, 0, 0, 0);
+  }
 }
