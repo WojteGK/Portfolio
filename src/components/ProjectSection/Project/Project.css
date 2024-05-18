@@ -1,0 +1,25 @@
+.project {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 2rem;
+   padding: 1rem;
+   border: 1px solid rgba(0, 0, 0, 0.4);
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 1rem;
+ }
+ 
+.project-image {
+   width: 7rem;
+   height: 7rem;
+}
+.project-info {
+    /* styles for the project description */
+}
+
+@media screen and (max-width: 768px){
+   .project{
+      flex-direction: column;
+      align-items: center;
+   }
+
+}
